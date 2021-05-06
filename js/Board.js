@@ -24,4 +24,14 @@ class Board {
 
         return spaces;
     }
+
+    // This is the render method to render the board
+    // This uses a for-of loop to iterate of each column on the top loop and over each space in the column on the inner loop.
+    drawHTMLBoard() {
+        for(let column of this.spaces) {
+            for(let space of column) {
+                space.drawSVGSpace();
+            }
+        }
+    }
 }
