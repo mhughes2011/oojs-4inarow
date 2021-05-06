@@ -7,6 +7,6 @@ let game = new Game();
  */
 startBtn.addEventListener('click', () => {
     game.startGame();
-    this.style.display = 'none';
+    startBtn.style.display = 'none';
     document.getElementById('play-area').style.opacity = '1';
 });
